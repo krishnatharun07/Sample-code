@@ -1,0 +1,27 @@
+<div id="table">
+		<table  border="1" cellpadding="3" cellspacing="0"> 
+			Name:<input class="input" type="text" placeholder="Sort Data using Name" ng-model="search.name" ></input>
+			Id:<input class="input" type="text" placeholder="Sort Data using ID" ng-model="search.id" ></input>
+			Email:<input class="input" type="text" placeholder="Sort Data using Email" ng-model="search.email" ></input>
+			<tr style="font-weight:bold; font-size:16px; color:#d90036; text-align:center">
+				<td>ID</td>
+				<td>Name</td>
+				<td>Username</td>
+				<td>Email</td>
+				<td>Info</td>
+			</tr>
+			<tr style="font-size:11px" ng-repeat="data in employees | filter:search">
+				<td>{{data.id}}</td>
+				<td>{{data.name}}</td>
+				<td>{{data.username}}</td>
+				<td>{{data.email}}</td>
+				<td>
+					<a href="#employeeDetails/{{employees.indexOf(data)}}"><input type="button" value="Details"/></a>
+					<a href="#"><input type="button" value="Edit"/></a>
+					<input type="button" value="Delete"/>
+					<a href="#addemployee"><input type="button" value="Add"/></a>
+				</td>
+			</tr>
+			
+		</table>
+</div>

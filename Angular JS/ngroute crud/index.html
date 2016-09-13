@@ -1,0 +1,27 @@
+<table>
+<!--            <tr><td colspan='4'></td><th colspan='6'>Address</th><td colspan='2'></td><th colspan='3' >Company</th></tr>-->
+            <tr><td>ID</td><td>Name</td><td>Username</td><td>Email</td><td>Add</td><td>Edit</td><td>Delete</td><td>Details</td></tr>
+<!--                <td>Street</td><td>Suite</td><td>City</td><td>Zipcode</td><td>geo:lat</td><td>geo:lang</td><td>Phone</td><td>Website</td><td>Name</td><td>CatchPhrase</td><td>bs</td></tr>-->
+            
+            <tr ng-repeat = "student in students">
+                <td>{{ student.id}}</td>
+                <td>{{ student.name}}</td>
+                <td>{{ student.username}}</td>
+                <td>{{ student.email}}</td>
+                <td><a href="#Add"><button class="btn btn-warning"><span class="glyphicon glyphicon-plus"></span></button></a></td>
+                <td><a href="#Edit"><button class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span></button></a></td>
+                <td><a href="#Delete"><button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button></a></td>
+                <td><a href="#Details/{{students.indexOf(student)}}"><button class="btn btn-info"><span class="glyphicon glyphicon-book"></span></button></a></td>   
+                <!--<td>{{ student.address.street}}</td>
+                <td>{{ student.address.suite}}</td>
+                <td>{{ student.address.city}}</td>
+                <td>{{ student.address.zipcode}}</td>
+                <td>{{ student.address.geo.lat}}</td>
+                <td>{{ student.address.geo.lng}}</td>
+                <td>{{ student.phone}}</td>
+                <td>{{ student.website}}</td>
+                <td>{{ student.company.name}}</td>
+                <td>{{ student.company.catchPhrase}}</td>
+                <td>{{ student.company.bs}}</td>  -->
+            </tr>       
+</table>

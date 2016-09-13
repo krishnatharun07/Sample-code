@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="en" ng-app="myApp">
+    <head>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Angular JS CRUD OPERATIONS</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>	
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="ngroute.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-route.js"></script>
+    <style>
+         table, th , td {
+            border: 2px solid grey;
+            border-collapse: collapse;
+            padding: 5px;
+            text-align: center;
+            margin:0px auto;
+         }
+         
+         table tr:nth-child(odd) {
+            background-color: aliceblue;
+         }
+         
+         table tr:nth-child(even) {
+            background-color: lightgrey;
+         }
+      </style>
+    </head>
+    <body>
+    <h2 style="text-align:center">Angular JS CRUD OPERATIONS</h2>
+    <div  ng-controller = "myCtrl">
+        
+<!--        <p><input type="text" ng-model="test"></p>-->
+        <div ng-view>
+        
+        </div>
+        
+           
+        
+    </div>
+    
+    </body>
+</html>

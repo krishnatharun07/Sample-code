@@ -1,0 +1,14 @@
+<html lang="en" ng-app="weatherApp">
+    <head>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.4/angular.min.js"></script>
+        <script src="script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-route.js"></script>
+    </head>
+    <body ng-controller="controller">
+        <input type="text" placeholder="Search by City Name" ng-model="cityName"> OR
+        <input type="text" placeholder="Search by Zip Code" ng-model="zipCode">
+        <a href="#/weather"><button ng-click="callSearch()">Search</button></a>
+       <!-- <div ng-include="'weather.html'"></div>-->
+        <div ng-view></div>
+    </body>
+</html>

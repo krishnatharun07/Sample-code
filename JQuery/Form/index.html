@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+		<link href="style.css" rel="stylesheet"/>
+		<script src="jquery.js"></script>
+        <script src="formValidate.js"></script>
+    </head>
+    <body id="body">
+		<form action="" method="">
+			<table class="table">
+				<tbody>
+					<tr>
+						<td>First Name</td>
+						<td><input type="text" class="input" id="fname" placeholder="First Name" required pattern="^[a-zA-z]+$" title="Please enter your first name" value="" required></td>
+						<td><span id="span1"></span></td>
+					</tr>
+					<tr>
+						<td>Last Name</td>
+						<td><input type="text" class="input" id="lname" placeholder="Last Name" required pattern="^[a-zA-z]+$" title="Please enter your last name" required></td>
+						<td><span id="span2"></span></td>
+					</tr>
+					<tr>
+						<td>Student ID</td>
+						<td><input type="number" class="input" id="sid" placeholder="Student ID" title="Please enter your 10 digit Student ID" min="1000000000" required></td>
+						<td><span id="span3"></span></td>
+					</tr>
+					<tr>
+						<td>Email</td>
+						<td><input type="email" class="input" placeholder="Email ID" id="email" title="Example: xyz@abc.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required></td>
+						<td><span id="span4"></span></td>
+					</tr>
+					<tr>
+						<td>Phone</td>
+						<td><input type="tel" class="input" id="phone" placeholder="Phone Number" title="Please enter your 10 digit phone number" required pattern="[0-9]{10}" required></td>
+						<td><span id="span5"></span></td>
+					</tr>
+					<tr>					
+						<td>Date of Birth</td>
+						<td><input type="date" class="input" id="date" placeholder="Date of Birth" title="Please select your date of birth" required></td>
+						<td><span id="span6"></span></td>
+					</tr>
+					<tr>					
+						<td>Create Password</td>
+						<td><input type="password" class="input" placeholder="Create password" title="Please select your password" required></td>
+					</tr>
+					<tr>
+						<td>Major</td>
+						<td>
+							<input list="major" class="input" id="majorInput" multiple autocomplete="on" placeholder="Select your major" title="Please choose your major" required>
+							<datalist id="major">
+								<option>Aerospace</option>
+								<option>Bio Medical</option>
+								<option>Chemical</option>
+								<option>Computer Science</option>
+								<option>Electrical</option>
+								<option>Economics</option>
+								<option>Information Systems</option>
+							</datalist>
+							<td><span id="span7"></span></td>
+						</td>
+					</tr>
+					<tr>
+						<td>Gender</td>
+						<td class="othertags">
+							Male<input type="radio" value="male" name="gender" id="male" required>
+							Female<input type="radio" value="female" id="female" name="gender" required>
+							<td><span id="span8"></span></td>
+						</td>
+					</tr>
+					<tr>
+						<td>Hobbies</td>
+						<td class="othertags">
+							Cooking<input type="checkbox" value="cooking" id="hobbies1">
+							Sports<input type="checkbox" value="sports" id="hobbies2">
+							Music<input type="checkbox" value="music" id="hobbies3"><br>
+							Reading<input type="checkbox" value="reading" id="hobbies4">
+							Writing<input type="checkbox" value="writing" id="hobbies5">
+						</td>
+						<td><span id="span9"></span></td>
+					</tr>
+					<tr>
+						<td>Country</td>
+						<td>
+						<select class="input" id="selCountry">
+							<script>
+								$(document).ready(function(){
+									selectCountry();
+								});
+							</script>
+						</select>
+						<span id="span10"></span>
+						
+						<select class="input" style="display:none" id="selState">
+						<option value="">State</option>
+						</select>
+						
+						<select class="input" style="display:none" value="" id="selCity" required>
+						<option value="">City</option>
+						</select>
+					</td>
+					<tr>
+						<td>Eye color</td><td class="othertags"><input type="color"></td>
+					</tr>
+					<tr><td></td><td><input type="submit" value="Submit" class="button"></td></tr>
+				</tbody>
+			</table>
+		</form>
+    </body>
+</html>

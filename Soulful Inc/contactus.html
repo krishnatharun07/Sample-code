@@ -1,0 +1,127 @@
+<html>
+<head>
+<title>Soulful Fingers</title>
+<link href="style.css" rel="stylesheet"/>
+<script src="selection.js"></script>
+</head>
+<body>
+<div class="mainbg" style="width:100%;height:268%">
+<div class="main">
+	<div class="header">
+	</div>
+	<div class="pagename"> Soulful Fingers Publications .INC
+		<br> <h6 class="h6">You write, we listen<h6>
+	</div>
+	<div class="menu">
+		<ul class="anchor">
+			<li><a href="home.html">Home</a></li>
+			<li><a href="submit.html" class="anchor">Submit Your Work</a>
+				<ul class="submenu">
+					<li><a href="">Submit a Story</a></li>
+					<li><a href="">Submit a Tiny Tale</a></li>
+					<li><a href="">Submit a Novel</a></li>
+					<li><a href="">Submit a Script</a></li>
+				</ul>
+			</li>
+			<li><a href="" class="anchor">Publications</a></li>
+			<li><a href="" class="anchor">Meet Other Writers</a></li>
+			<li><a href="http://nanowrimo.org/" target="_blank" class="anchor">NaNo WriMo</a></li>
+			<li><a href="aboutus.html" class="anchor">About Us</a></li>
+			<li><a href="contactus.html" class="anchor">Contact Us</a></li>
+		</ul>
+	</div>
+	<div class="concenter">
+	</div>
+	<div class="form">
+		<h1>Contact Us!</h1>
+		<form action="" method="get">
+			<table class="table">
+				<tr>
+					<td>Name*</td> <td><input type="text" class="inp" id="name" placeholder="Enter Name"/></td>
+				</tr>
+				<tr>
+					<td>Email*</td> <td><input type="text" class="inp" id="email" placeholder="Enter Email ID"/></td>
+				<tr>
+				<tr>
+					<td>Mobile</td> <td><input type="text" class="inp" id="mobile" placeholder="Enter Mobile Number"/></td>
+				<tr>
+				<tr>
+					<td>Region</td> 
+					<td>
+						<select class="sel" id="selCountry" onchange="selectState()">
+							<script>
+								selectCountry();
+							</script>
+						</select>
+						
+						<select class="sel" style="visibility:hidden" id="selState"  onchange="selectCity()">
+						<option value="">State</option>
+						</select>
+						
+						<select class="sel" style="visibility:hidden" value="" id="selCity">
+						<option value="">City</option>
+						</select>
+					</td>
+				<tr>
+				<tr>
+					<td>Subject</td> <td><input type="text" class="inp" id="subject" placeholder="Enter Subject"/></td>
+				<tr>
+				<tr>
+					<td>Message</td> <td><textarea type="text" class="inp2" id="mobile" cols="40" rows="10" placeholder="Enter Your Message"></textarea></td>
+				<tr>
+				<tr>
+					<td></td><td><input type="submit" class="submit" id="submit" value="SHOOT!!"></input></td>
+				<tr>
+	</table>
+	</form>
+	</div>
+	<div class="addr">
+	<h2>Address: </h2><br>
+	<p>12 North Ohio Lane,<br> Suite 223,<br> San Fransisco,<br>CA-90214. </p>
+	</div>
+	
+	<div class="footer1">
+	<h2>Services</h2>
+		<ul>
+			<li class="side">Online Store</li>
+			<li class="side">Editors Choice</li>
+			<li class="side">Novel of the month</li>
+			<li class="side">Best sellers</li>
+			<li class="side">Talk to an agent</li>
+			<li class="side">Terms and Condtions</li>
+		</ul>
+	</div>
+	<div class="links">
+	<h2>Social Links</h2>
+		<ul>
+			<li><img src="img/fblogo.jpg"/></li>
+			<li><img src="img/twitterlogo.jpg"/></li>
+			<li><img src="img/instalogo.jpg"/></li>
+		<ul>
+	</div>
+	<div class="contact">
+	<h2>Contact Us</h2> 
+	<p class="p1">Reach us at: </p>
+	<p class="p1">queries@soulfulfingers.com</p><br>
+	<h3>Address: </h3>
+	<p class="p2">12 North Ohio Lane,<br>
+	Suite 223,<br>
+	San Fransisco,<br>
+	CA-90214.
+	</p>
+	</div>
+	<div class="featured">
+	<h2>Featured</h2>
+	<p>Every month we feature a new book that we pick through your votes.</p>
+	<br>
+	<img src="img/featured.jpg"/>
+	</div>
+	<div class="reserved">
+		<h6>&copy;Soulful Fingers .Inc <br> All rights reserved</h6>
+	</div>
+	
+	
+</div>
+</div>
+</body>
+</html>

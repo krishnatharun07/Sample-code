@@ -1,0 +1,75 @@
+.field{
+	margin-left:430px;	
+}
+
+.heading {
+	width:785px;height:75px;background:#6379b5;margin-left:20px;margin-right:20px;
+}
+
+.heading h1{
+	color:white;line-height:75px;text-align:center;
+}
+
+.secA{
+	color:#5a70ad;margin-left:20px;margin-bottom:-2px;
+}
+
+.hr{
+	border:1px solid black;margin-left:20px;
+}
+
+.table1{
+	margin-left:30px;
+}
+
+.inp{
+	width:200px;margin-left:55px;
+}
+
+.inp:hover{
+	background:#fff7ce
+}
+
+.airline{
+	width:200px;margin-left:55px;
+}
+
+.airline:hover{
+	background:#fff7ce
+}
+
+.checkinp{
+	margin-left:55px;
+}
+
+.form p{
+	margin-left:30px;
+}
+
+.div2{
+	width: 300px;
+    height: 196px;
+    float: left;
+    margin-left: 488px;
+    margin-top: -283px;
+}
+
+.div2 p{
+	margin-top:0px;
+}
+
+.table2{
+	margin-top:-15px;margin-left:70px;
+}
+
+.inp2{
+	width:50px;
+}
+
+.inp3{
+	margin-left:25px;
+}
+
+.submit{
+	width:100px;height:30px;margin-left:30px;background:#5a699c;color:white;line-height:30px;font-weight:bold;
+}

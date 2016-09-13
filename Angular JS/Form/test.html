@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	</head>
+	<body>
+		<div ng-app="">
+			<select>
+				<option ng-repeat="item in items" value="item.value">{{item}}</option>
+			</select>
+		</div>
+		<script>
+		var items=["item1","item2","item3","item4","item5"]
+		</script>
+	</body>
+</html>

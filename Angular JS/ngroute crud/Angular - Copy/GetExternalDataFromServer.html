@@ -1,0 +1,87 @@
+<html>
+	<head>
+		<title>
+			Showing AJAX data from server
+		</title>
+		<style>
+				.input{
+				margin-left:10px;
+				margin-bottom:5px;
+				}
+				#dtails{
+				height:auto;
+				width:auto;
+				background:#ffffbf;
+				float:left;
+				margin-left:30px;
+				margin-top:100px;
+				}
+				#table{
+				background:#fffff2;
+				float:left;
+				}
+				a{
+				text-decoration:none;
+				}
+		</style>
+		
+		<script src="angularLib.js"></script>
+		<script src="angularRouteLib.js"></script>
+			
+	</head>
+	<body ng-app="myApp" ng-controller="ctrl">
+		
+		
+		<div ng-view>
+			
+		</div>
+		
+		<script>
+				var ang=angular.module('myApp',['ngRoute']);
+				ang.controller('ctrl',function($scope,$http,$routeParams){
+					$http.get("customerData.txt").success(function(response){
+						$scope.employees = response;
+						$scope.whichEmp = $routeParams.empId;
+					})
+					$scope.adding=function(){
+						var data={'id':$scope.id1,'name':$scope.name1,'username':$scope.username1};
+						$http.post("customerData.txt",data).success(function(response){
+						//console.log(data);
+						$scope.employees = response;
+						//$scope.employees.push(data);
+						//console.log($scope.employees);
+		
+					})
+					}
+				
+				});
+				ang.config(function($routeProvider){
+					$routeProvider
+					.when('/',{
+						templateUrl:'empList.html',
+						controller: 'ctrl'
+					
+					})
+					.when('/employeeDetails/:empId',{
+						templateUrl:'details.html',
+						controller: 'ctrl'
+					
+					})
+					.when('/empList',{
+						templateUrl:'empList.html',
+						controller: 'ctrl'
+					
+					})
+					
+					.when('/addemployee',{
+						templateUrl:'addemployee.html',
+						controller: 'ctrl'
+					
+					})
+					.otherwise({
+					redirectTo:'/'
+					})
+				})
+		</script>	
+	</body>
+</html>

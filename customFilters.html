@@ -1,0 +1,37 @@
+<!doctype HTML>
+<html lang="en" ng-app="myApp">
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.4/angular.min.js"></script>
+		<script>
+			var myApp=angular.module("myApp",[]);
+			myApp.filter('ordinal', function(){
+				return function(number){
+				console.log(number);
+					var n=number % 10;
+					if(isNaN(number) || number < 1)
+					{
+						if(number!=null)
+						return 'Cannot format "'+number+'" in ordinal form';
+					}
+					
+					else 
+					{
+						if(n==1)
+						return number+'st';
+				
+						else if(n==2)
+						return number+'nd';
+						else if(n==3)
+						return number+'rd';
+						else
+						return number+'th';
+					}
+					}
+			});
+		</script>
+	</head>
+	<body>
+		<input type="text" placeholder="Enter a number" ng-model="input">
+		<h1>{{input | ordinal}}</h1>
+	</body>
+</html>

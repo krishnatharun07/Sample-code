@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en" ng-app="myApp">
+    <head>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Angular JS CRUD OPERATIONS</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>	
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="ngroute.js"></script>    
+<!--        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.5/angular.min.js"></script>-->
+    </head>
+    <body>
+    <h2 style="text-align:center">Angular JS CRUD OPERATIONS</h2>
+           
+        <td><a href="#Add"><button class="btn btn-warning"><span class="glyphicon glyphicon-plus"></span></button></a></td>
+                <td><a href="#Edit"><button class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span></button></a></td>
+                <td><a href="#Delete"><button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button></a></td>
+                <td><a href="#Details"><button class="btn btn-info"><span class="glyphicon glyphicon-book"></span></button></a></td>
+        <div ng-view>
+        
+        </div>
+    
+    
+    
+    
+    </body>
+</html>

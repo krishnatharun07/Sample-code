@@ -1,0 +1,142 @@
+<html>
+<head>
+<link href="style.css" rel="stylesheet">
+<script src="validate3.js"></script>
+<title>Travel Authorization Form</title>
+</head>
+<body>
+<fieldset class="field">
+<form class="form" method="get" action="success.html">
+	<div class="heading">
+		<h1>Travel Authorization Form</h1>
+	</div>
+	<h2 class="secA">Section A: Client Information</h2>
+	<hr class="hr">
+	
+	<table class="table1">
+		<tr>
+			<td>Title:</td>
+			<td><input type="name" id="title" value="" class="inp"></td>
+			<td><span id="error1"></span>
+		</tr>
+		<tr>
+			<td>First Name:</td>
+			<td><input type="name" id="fname" value="" class="inp"></td>
+			<td><span id="error2"></span>
+		</tr>
+		<tr>
+			<td>Middle Initial:</td>
+			<td><input type="name" id="initial" value="" class="inp"></td>
+			<td><span id="error3"></span>
+		</tr>
+		<tr>
+			<td>Last Name:</td>
+			<td><input type="name" id="lname" value="" class="inp"></td>
+			<td><span id="error4"></span>
+		</tr>
+		<tr>
+			<td>Email Address:</td>
+			<td><input type="name" id="email" value="" class="inp"></td>
+			<td><span id="error5"></span>
+		</tr>
+		<tr>
+			<td>Phone Number:</td>
+			<td><input type="name" id="phno" value="" class="inp"></td>
+			<td><span id="error6"></span>
+		</tr>
+	</table>
+	<h2 class="secA">Section B: Travel Information</h2>
+	<hr class="hr">
+	<table class="table1">
+		<tr>
+			<td>Airline Name:</td>
+			<td>
+				<select class="airline" id="airline">
+					<option value="">Select an airline</option>
+					<option value="AA">American Airlines</option>
+					<option value="BA">British Airways</option>
+					<option value="CP">Cathay Pacific</option>
+					<option value="EM">Emirates</option>
+					<option value="JA">Jet Airways</option>
+					<option value="LU">Lufthansa</option>
+				</select>
+			</td>
+			<td><span id="error7"></span>
+		</tr>
+		<tr>
+			<td>Destination:</td>
+			<td><input type="name" id="dest" value="" class="inp"></td>
+			<td><span id="error8"></span>
+		</tr>
+		<tr>
+			<td>Leave Date:</td>
+			<td><input type="date" id="ldate" value="" class="inp"></td>
+			<td><span id="error9"></span>
+		</tr>
+		<tr>
+			<td>Return Date:</td>
+			<td><input type="date" id="rdate" value="" class="inp"></td>
+			<td><span id="error10"></span>
+		</tr>
+		<tr>
+			<td>Estimated Cost:</td>
+			<td><input type="name" id="ecost" value="" class="inp"></td>
+			<td><span id="error11"></span>
+		</tr>
+	</table>
+	<p>Includes<br> Customer Visit?
+	<input type="checkbox" id="visit" value="" class="checkinp">Yes</p>
+	<p>Purpose of travel:
+	<textarea rows="4" cols="30" class="inp" id="purpose" value=""></textarea>
+	<span id="error12"></span></p>
+	<div class="div2">
+		<p>Additional estimated expenses:</p>
+		<table class="table2">
+			<tr>
+				<td>Car rental:</td>
+				<td><input type="name" id="carrental" value="" class="inp2"></td>
+				<td><span id="error13"></span></td>
+			</tr>
+			<tr>
+				<td>Hotel:</td>
+				<td><input type="name" id="hotel" value="" class="inp2"></td>
+				<td><span id="error14"></span></td>
+			</tr>
+			<tr>
+				<td>Meals:</td>
+				<td><input type="name" id="meals" value="" class="inp2"></td>
+				<td><span id="error15"></span></td>
+			</tr>
+			<tr>
+				<td>Total estimate:</td>
+				<td><input type="name" id="totalestimate" value="" class="inp2" placeholder="$0.00"></td>
+			</tr>
+		</table>
+		
+		<p>Payment method used: <br><span id="error16"></span> </p>
+		<table class="table2">
+			<tr>
+				<td>Cash</td>
+				<td>
+					<input type="radio" id="cash" name="payment"value="cash" class="inp3">
+				</td>
+			</tr>
+			<tr>
+			<td>Credit card</td>
+				<td>
+					<input type="radio" id="credit" name="payment"value="credit" class="inp3">
+				</td>
+			</tr>
+			<tr>
+				<td>Check</td>
+				<td>
+					<input type="radio" id="check" name="payment" value="check" class="inp3">
+				</td>
+			</tr>
+		</table>
+	</div>
+	<input type="submit" id="submit" value="Submit" class="submit" onclick="return validate()">
+</form>
+</fieldset>
+</body>
+</html>

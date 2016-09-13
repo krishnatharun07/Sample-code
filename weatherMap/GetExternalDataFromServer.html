@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<title>
+			Showing Weather data
+		</title>
+		<style>
+			*{
+				padding:0px;
+				margin:0px;
+			}
+			.heading{
+			height:100px;
+			width:100%;
+			text-align:center;
+			font-size:50px;
+			color:white;
+			background:black;
+			line-height:100px;
+			}
+			.input{
+			margin-right:0px;
+			}
+		</style>
+		
+		<script src="angularLib.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	</head>
+	<body ng-app="myApp" ng-controller="ctrl">
+		
+		
+		<h1 class="heading">Current Weather Report</h1>
+		<div class="col-md-4">
+			<input class="form-control input" type="text" ng-model="cname" placeholder="Please enter City Name"/>
+		</div>
+		<div class="col-md-2">
+			<button type="Submit" class="btn btn-success"ng-click="disp()">Get Weather</button>
+		</div>
+		
+		<div class="col-md-4">
+			<table  class="table table-striped">
+				<tr><td>Description:</td><td>{{weatherData.data.weather[0].description}}</td></tr>
+				<tr><td>Temp:</td><td>{{weatherData.data.main.temp}}</td></tr>
+				<tr><td>Pressure:</td><td>{{weatherData.data.main.pressure}}</td></tr>
+				<tr><td>Humidity:</td><td>{{weatherData.data.main.humidity}}</td></tr>
+				<tr><td>Min Temp:</td><td>{{weatherData.data.main.temp_min}}</td></tr>
+				<tr><td>Max Temp:</td><td>{{weatherData.data.main.temp_max}}</td></tr>
+				<tr><td>Sunrise:</td><td>{{weatherData.data.sys.sunrise}}</td></tr>
+				<tr><td>Sunset:</td><td>{{weatherData.data.sys.sunset}}</td></tr>	
+				
+			</table>
+		</div>
+		<script>
+				var ang=angular.module('myApp',[]);
+				ang.controller('ctrl',function($scope,$http){
+				$scope.disp=function(){
+						$http.get('http://api.openweathermap.org/data/2.5/weather?q='+$scope.cname+'&appid=d9cfcc35d9c2684d5fbbdb413adecbc0').then(function(response){
+								$scope.weatherData = response;
+								
+							})
+							}
+				});
+				
+		</script>	
+	</body>
+</html>

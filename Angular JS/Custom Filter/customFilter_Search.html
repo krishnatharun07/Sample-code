@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.4/angular.min.js"></script>
+        <script src="myJs.js"></script>
+    </head>
+    <body ng-app="customApp" ng-controller="controller">
+        <input type="text" placeholder="Search" title="Please type the name of the student you want to search" ng-model="search">
+        <ul ng-repeat="student in students | customSearch:search">
+            <li>{{student.name}}</li>
+        </ul>
+    </body>
+</html>

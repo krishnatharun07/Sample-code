@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script>
+			$.getJSON('http://jsonplaceholder.typicode.com/users',function(data){
+				document.write('<table border="1" style="border-collapse:seperate;empty-cells:hide"><tr><th>ID</th><th>Name</th><th>User Name</th><th>Email</th><th colspan="3">Address</th><th colspan="2">Geo</th><th>Phone</th><th>Website</th><th colspan="3">Company</th></tr>');
+				document.write("<tr><th></th><th></th><th></th><th></th><th>Street</th><th>City</th><th>Zip Code</th><th>Latitude</th><th>Longitude</th><th></th><th></th><th>Name</th><th>Catch Phrase</th><th>BS</th></tr>");
+				for(var i=0;i<data.length;i++)
+				{
+					document.write("<tr><td>"+data[i].id+"</td><td>"+data[i].name+"</td><td>"+data[i].username+"</td><td>"+data[i].email+"</td><td>"+data[i].address.street+"</td><td>"+data[i].address.city+"</td><td>"+data[i].address.zipcode+"</td><td>"+data[i].address.geo.lat+"</td><td>"+data[i].address.geo.lng+"</td><td>"+data[i].phone+"</td><td>"+data[i].website+"</td><td>"+data[i].company.name+"</td><td>"+data[i].company.catchPhrase+"</td><td>"+data[i].company.bs+"</td></tr>");
+					//console.log(data[i].id);
+				}
+				document.write("</table>");
+			});
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

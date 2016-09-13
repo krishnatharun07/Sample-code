@@ -1,0 +1,54 @@
+<html lang="en" ng-app="weatherApp">
+    <head>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.4/angular.min.js"></script>
+        <script src="script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-route.js"></script>
+    </head>
+    <body ng-controller="controller">
+        <h3>{{error}}</h3>
+        <table border="1" style="border-collapse:seperate;empty-cells:hide">
+            <tr>
+                <th>City</th>
+                <th>Country</th>
+                <th>City ID</th>
+                <th colspan="2">Temperature</th>
+                <th>Pressure</th>
+                <th>Humidity</th>
+                <th colspan="2">Weather</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>Minimum</th>
+                <th>Maximum</th>
+                <th></th>
+                <th></th>
+                <th>Main</th>
+                <th>Description</th>
+            </tr>
+             <tr>
+                <td>{{details.city.name}}</td>
+                <td>{{details.city.country}}</td>
+                <td>{{details.city.id}}</td>
+                <td>{{details.list[0].temp.min}}</td>
+                <td>{{details.list[0].temp.max}}</td>
+                <td>{{details.list[0].pressure}}</td>
+                <td>{{details.list[0].humidity}}</td>
+                <td>{{details.list[0].weather[0].main}}</td>
+                <td>{{details.list[0].weather[0].description}}</td>
+            </tr>
+            <tr>
+                <td>{{details.name}}</td>
+                <td>{{details.sys.country}}</td>
+                <td>{{details.sys.id}}</td>
+                <td>{{details.main.temp_min}}</td>
+                <td>{{details.main.temp_max}}</td>
+                <td>{{details.main.pressure}}</td>
+                <td>{{details.main.humidity}}</td>
+                <td>{{details.weather[0].main}}</td>
+                <td>{{details.weather[0].description}}</td>
+            </tr>
+        </table>
+    </body>
+</html>
