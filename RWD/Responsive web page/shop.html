@@ -1,0 +1,529 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>	
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<link href="font-awesome-4.6.3\css/font-awesome.min.css" rel="stylesheet">
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
+  <script src="morris/morris.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/r224/prettify.min.js"></script>
+  <script src="morris\examples\lib/example.js"></script>
+  <link rel="stylesheet" href="morris\examples\liblib/example.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/prettify/r224/prettify.min.css">
+  <link rel="stylesheet" href="morris/morris.css">
+		<style>
+			.glyphicon-cloud{
+			font-size:80px;
+			color:green; 
+			background:green;
+			color:white;
+			padding:15px;
+			border-radius:100px;
+			}
+			.glyphicon-th-list{
+			font-size:70px;
+			color:green; 
+			background:red;
+			color:white;
+			padding:20px;
+			border-radius:100px;
+			}
+			.glyphicon-th-list:hover{
+			background:green;
+			}
+			.fa-calculator{
+			font-size:70px;
+			color:green; 
+			background:orange;
+			color:white;
+			padding:20px;
+			border-radius:100px;
+			}
+			.item img{
+			width:100% !important;
+			height:400px !important;
+			}
+		</style>
+	</head>
+	<body>
+	<!--
+		XS : Extra Small
+		SM : small
+		md : Medium
+		lg : large size.
+	
+	-->	
+		<nav id="menu" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-toggle="collapse" data-target="#menubar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div id="menubar" class="collapse navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="home.html">Home</a></li>	
+							<li><a href="home.html">Services</a></li>	
+							<li><a href="home.html">About us</a></li>	
+							<li><a href="home.html">Career</a></li>	
+							<li><a href="home.html">Profile</a></li>	
+							<li><a href="home.html">Contact Us</a></li>	
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<br>
+		<br>
+		<div class="container">
+			<div class="page-header">
+			
+				<h2>Welcome</h2>
+				<p>On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document. You can use these galleries to insert tables, headers, footers, lists, cover pages, and other document building blocks. When you create pictures, charts, or diagrams, they also coordinate with your current document look.</p>
+				
+			</div>
+			</div>
+				
+				
+			<!--slider -->	
+			<div class="container">
+				<div id="slider" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#slider" data-slide-to="0" class="active"></li>
+						<li data-target="#slider" data-slide-to="1"></li>
+						<li data-target="#slider" data-slide-to="2"></li>
+						<li data-target="#slider" data-slide-to="3"></li>
+						<li data-target="#slider" data-slide-to="4"></li>
+					</ol>
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<img src="img/professional.jpg">
+						</div>
+						<div class="item">
+							<img src="img/services.jpeg">
+						</div>
+						<div class="item">
+							<img src="img/shop1.jpg">
+						</div>
+						<div class="item">
+							<img src="img/shop2.jpg">
+						</div>
+						<div class="item">
+							<img src="img/shop3.png">
+						</div>
+					</div>
+					<a href="#slider" class="left carousel-control" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+					<a href="#slider" class="right carousel-control" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+					
+				</div>
+			<hr>
+			</div>
+			
+			
+			<div class="container">
+			
+			<div class="row">
+           
+            <div class="col-md-4">
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-check"></i> Home</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                        <a href="#" class="btn btn-danger">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-gift"></i> Services</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                        <a href="#" class="btn btn-danger">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-compass"></i> Career</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                        <a href="#" class="btn btn-danger">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+			<hr>
+			
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="panel-group" id="acdn">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h4 class="panel-title"><a href="#home" data-toggle="collapse" data-parent="#acdn">Home</a></h4>
+							</div>
+							<div id="home" class="panel-collapse collapse in">
+							<div class="panel-body text-justify
+							">On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document. You can use these galleries to insert tables, headers, footers, lists, cover pages, and other document building blocks. When you create pictures, charts, or diagrams, they also coordinate with your current document look.
+							</div>
+							</div>
+						</div>
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h4 class="panel-title"><a href="#Services" data-toggle="collapse" data-parent="#acdn">Services</a></h4>
+							</div>
+							<div id="Services" class="panel-collapse collapse">
+							<div class="panel-body text-justify
+							">
+								<img src="img/2.jpg" class="img-responsive">
+							On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document. You can use these galleries to insert tables, headers, footers, lists, cover pages, and other document building blocks. When you create pictures, charts, or diagrams, they also coordinate with your current document look.
+							</div>
+							</div>
+						</div>
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h4 class="panel-title"><a href="#Aboutus" data-toggle="collapse" data-parent="#acdn">About Us</a></h4>
+							</div>
+							<div id="Aboutus" class="panel-collapse collapse">
+							<div class="panel-body text-justify
+							">
+								<img src="img/3.jpg" class="img-responsive">
+							On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document. You can use these galleries to insert tables, headers, footers, lists, cover pages, and other document building blocks. When you create pictures, charts, or diagrams, they also coordinate with your current document look.
+							</div>
+							</div>
+						</div>
+						
+						
+						
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="list-group">
+						<a href="index.html" class="list-group-item active">Home <span class="badge">1</span></a>
+						<a href="index.html"  class="list-group-item">Services <span class="badge">2</span></a>
+						<a href="index.html"  class="list-group-item">About Us <span class="badge">3</span></a>
+						<a  href="index.html" class="list-group-item">Career <span class="badge">4</span></a>
+						<a href="index.html"  class="list-group-item">Profile <span class="badge">5</span></a>
+						<a class="list-group-item">Contact Us <span class="badge">6</span></a>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<button class="btn btn-success" data-toggle="collapse" data-target="#register">Register Here..</button>
+					<br>
+					<br>
+					<form role="form" id="register" class="collapse">
+						<div class="form-group">
+							<label for="name">Name</label>
+							<input type="text" id="name" class="form-control" placeholder="enter name" required>
+						</div>
+						<div class="form-group">
+							<label for="email">Email</label>
+							<input type="email" id="email" class="form-control" placeholder="enter email" required>
+						</div>
+						<div class="form-group">
+							<label for="pwd">Password</label>
+							<input type="email" id="pwd" class="form-control" placeholder="enter email" required>
+						</div>
+						<div class="form-group">
+							<label for="mobile">Mobile</label>
+							<input type="email" id="mobile" class="form-control" placeholder="enter email" required>
+						</div>
+						<div class="form-group">
+							<label for="mobile">Gender</label>
+							Male <input type="radio" id="mobile" > 
+							Female <input type="radio" id="mobile" >
+						</div>
+						<div class="form-group">
+							<label for="mobile">State</label>
+							<select required class="form-control">
+								<option>Select State</option>	
+								<option>AP State</option>	
+								<option>UP State</option>	
+								<option>MP State</option>	
+								<option>TS State</option>	
+								<option>UP State</option>	
+							</select>
+						</div>
+						<button type="submit" class="btn btn-primary">Login</button>
+						<button type="submit" class="btn btn-danger pull-right">Register?</button>
+					</form>
+					
+				</div>
+				
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="thumbnail">
+						<img src="img/1.jpg" class="img-responsive">
+						<div class="caption">
+							<h3 class="text-primary">Baby Care Products</h3>
+							<p>On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document. </p>
+							<span class="glyphicon glyphicon-star text-danger"></span>
+							<span class="glyphicon glyphicon-star text-danger"></span>
+							<span class="glyphicon glyphicon-star text-danger"></span>
+							<span class="glyphicon glyphicon-star-empty text-danger"></span>
+							<span class="glyphicon glyphicon-star-empty text-danger"></span>
+							<span class="pull-right text-primary" style="font-size:20px;">235$</span>
+							<hr>
+							<button class="btn btn-primary">Add To Cart</button>
+							<button class="btn btn-danger pull-right">Read More</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="thumbnail">
+						<img src="img/2.jpg" class="img-responsive">
+						<div class="caption">
+							<h3 class="text-primary">Baby Care Products</h3>
+							<p>On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document. </p>
+							<span class="glyphicon glyphicon-star text-danger"></span>
+							<span class="glyphicon glyphicon-star text-danger"></span>
+							<span class="glyphicon glyphicon-star text-danger"></span>
+							<span class="glyphicon glyphicon-star-empty text-danger"></span>
+							<span class="glyphicon glyphicon-star-empty text-danger"></span>
+							<span class="pull-right text-primary" style="font-size:20px;">235$</span>
+							<hr>
+							<button class="btn btn-primary">Add To Cart</button>
+							<button class="btn btn-danger pull-right">Read More</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="thumbnail">
+						<img src="img/3.jpg" class="img-responsive">
+						<div class="caption">
+							<h3 class="text-primary">Baby Care Products</h3>
+							<p>On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document. </p>
+							<span class="glyphicon glyphicon-star text-danger"></span>
+							<span class="glyphicon glyphicon-star text-danger"></span>
+							<span class="glyphicon glyphicon-star text-danger"></span>
+							<span class="glyphicon glyphicon-star-empty text-danger"></span>
+							<span class="glyphicon glyphicon-star-empty text-danger"></span>
+							<span class="pull-right text-primary" style="font-size:20px;">235$</span>
+							<hr>
+							<button class="btn btn-primary">Add To Cart</button>
+							<button class="btn btn-danger pull-right">Read More</button>
+						</div>
+					</div>
+				</div>
+			
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="thumbnail">
+						<img src="img/1.jpg" class="img-responsive">
+						<div class="caption">
+							<h3 class="text-primary">Baby Care Products</h3>
+							<p>On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document. </p>
+							<span class="glyphicon glyphicon-star text-danger"></span>
+							<span class="glyphicon glyphicon-star text-danger"></span>
+							<span class="glyphicon glyphicon-star text-danger"></span>
+							<span class="glyphicon glyphicon-star-empty text-danger"></span>
+							<span class="glyphicon glyphicon-star-empty text-danger"></span>
+							<span class="pull-right text-primary" style="font-size:20px;">235$</span>
+							<hr>
+							<button class="btn btn-primary">Add To Cart</button>
+							<button class="btn btn-danger pull-right">Read More</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="thumbnail">
+						<img src="img/2.jpg" class="img-responsive">
+						<div class="caption">
+							<h3 class="text-primary">Baby Care Products</h3>
+							<p>On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document. </p>
+							<span class="glyphicon glyphicon-star text-danger"></span>
+							<span class="glyphicon glyphicon-star text-danger"></span>
+							<span class="glyphicon glyphicon-star text-danger"></span>
+							<span class="glyphicon glyphicon-star-empty text-danger"></span>
+							<span class="glyphicon glyphicon-star-empty text-danger"></span>
+							<span class="pull-right text-primary" style="font-size:20px;">235$</span>
+							<hr>
+							<button class="btn btn-primary">Add To Cart</button>
+							<button class="btn btn-danger pull-right">Read More</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="thumbnail">
+						<img src="img/6.jpg" class="img-responsive">
+						<div class="caption">
+							<h3 class="text-primary">Baby Care Products</h3>
+							<p>On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document. </p>
+							<span class="glyphicon glyphicon-star text-danger"></span>
+							<span class="glyphicon glyphicon-star text-danger"></span>
+							<span class="glyphicon glyphicon-star text-danger"></span>
+							<span class="glyphicon glyphicon-star-empty text-danger"></span>
+							<span class="glyphicon glyphicon-star-empty text-danger"></span>
+							<span class="pull-right text-primary" style="font-size:20px;">235$</span>
+							<hr>
+							<button class="btn btn-primary">Add To Cart</button>
+							<button class="btn btn-danger pull-right">Read More</button>
+						</div>
+					</div>
+				</div>
+			
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="thumbnail">
+						<img src="img/4.jpg" class="img-responsive">
+						<div class="caption">
+							<h3 class="text-primary">Baby Care Products</h3>
+							<p>On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document. </p>
+							<span class="glyphicon glyphicon-star text-danger"></span>
+							<span class="glyphicon glyphicon-star text-danger"></span>
+							<span class="glyphicon glyphicon-star text-danger"></span>
+							<span class="glyphicon glyphicon-star-empty text-danger"></span>
+							<span class="glyphicon glyphicon-star-empty text-danger"></span>
+							<span class="pull-right text-primary" style="font-size:20px;">235$</span>
+							<hr>
+							<button class="btn btn-primary">Add To Cart</button>
+							<button class="btn btn-danger pull-right">Read More</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="thumbnail">
+						<img src="img/5.jpg" class="img-responsive">
+						<div class="caption">
+							<h3 class="text-primary">Baby Care Products</h3>
+							<p>On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document. </p>
+							<span class="glyphicon glyphicon-star text-danger"></span>
+							<span class="glyphicon glyphicon-star text-danger"></span>
+							<span class="glyphicon glyphicon-star text-danger"></span>
+							<span class="glyphicon glyphicon-star-empty text-danger"></span>
+							<span class="glyphicon glyphicon-star-empty text-danger"></span>
+							<span class="pull-right text-primary" style="font-size:20px;">235$</span>
+							<hr>
+							<button class="btn btn-primary">Add To Cart</button>
+							<button class="btn btn-danger pull-right">Read More</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="thumbnail">
+						<img src="img/6.jpg" class="img-responsive">
+						<div class="caption">
+							<h3 class="text-primary">Baby Care Products</h3>
+							<p>On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document. </p>
+							<span class="glyphicon glyphicon-star text-danger"></span>
+							<span class="glyphicon glyphicon-star text-danger"></span>
+							<span class="glyphicon glyphicon-star text-danger"></span>
+							<span class="glyphicon glyphicon-star-empty text-danger"></span>
+							<span class="glyphicon glyphicon-star-empty text-danger"></span>
+							<span class="pull-right text-primary" style="font-size:20px;">235$</span>
+							<hr>
+							<button class="btn btn-primary">Add To Cart</button>
+							<button class="btn btn-danger pull-right">Read More</button>
+						</div>
+					</div>
+				</div>
+			
+			</div>
+			<div class="row text-center">
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="img/4.jpg" class="img-responsive" alt="">
+                    <div class="caption">
+                        <h3>Feature Label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="img/3.jpg" class="img-responsive" alt="">
+                    <div class="caption">
+                        <h3>Feature Label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="img/2.jpg" class="img-responsive" alt="">
+                    <div class="caption">
+                        <h3>Feature Label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="img/1.jpg" alt="" class="img-responsive">
+                    <div class="caption">
+                        <h3>Feature Label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+		
+		<div class="row">
+		<div class="col-sm-8">
+			<div id="graph"></div>
+<pre id="code" class="prettyprint linenums" style="display:none;">
+// Use Morris.Bar
+Morris.Bar({
+  element: 'graph',
+  data: [
+    {x: '2011 Q1', y: 8},
+    {x: '2011 Q2', y: 1},
+    {x: '2011 Q3', y: 2},
+    {x: '2011 Q4', y: 3},
+    {x: '2012 Q1', y: 4},
+    {x: '2012 Q2', y: 5},
+    {x: '2012 Q3', y: 6},
+    {x: '2012 Q4', y: 7},
+    {x: '2013 Q1', y: 8}
+  ],
+  xkey: 'x',
+  ykeys: ['y'],
+  labels: ['Y'],
+  barColors: function (row, series, type) {
+    if (type === 'bar') {
+      var red = Math.ceil(55 * row.y / this.ymax);
+      return 'rgb(' + red + ',0,0)';
+    }
+    else {
+      return '#000';
+    }
+  }
+});
+</pre>	
+</div>
+		</div>
+		</div>
+	</body>
+</html>
+
+
